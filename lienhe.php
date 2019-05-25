@@ -73,12 +73,13 @@ $(window).on('load',function(event)
 
         <div class="col-md-7 contact-left">
           <h4 style="font-weight: bold;">Nhập thông tin liên hệ</h4>
-          <form action="#" method="post">
-            <input type="text" name="Name" placeholder="Họ tên" required="">
-            <input type="email" name="Email" placeholder="Địa chỉ email" required="">
-            <input type="text" name="Telephone" placeholder="Số điện thoại" required="">
-            <textarea name="message" placeholder="Ghi chú..." required=""></textarea>
-            <input type="submit" value="Gửi" >
+          <form action="modules/xuly.php" method="post">
+            <input id="Name" type="text" name="Name" placeholder="Họ tên" required="">
+            <input id="Email" type="email" name="Email" placeholder="Địa chỉ email" required="">
+            <input id="Telephone" type="text" name="Telephone" placeholder="Số điện thoại" required="">
+            <textarea id="message" name="message" placeholder="Ghi chú..." required=""></textarea>
+           
+            <input type="submit" name="send" id="send" value="Gửi">
           </form>
         </div>
       </div>

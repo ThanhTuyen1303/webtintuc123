@@ -13,6 +13,7 @@
             	<li style="list-style:none; font-size:16px"><a href="index.php?xem=chitiet&id=<?php echo $dong['idbaiviet'] ?>"><?php echo $dong['tenbaiviet'] ?></a></li>
                	<p class="tomtatloaitin"><?php echo $dong['tomtat'] ?></p>
                 <div class="clear"></div>
+                <hr style="border: 2px dashed navy;">
                 <?php
 			}
 				?>

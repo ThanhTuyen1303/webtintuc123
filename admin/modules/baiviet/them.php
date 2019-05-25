@@ -5,12 +5,12 @@
 <script type="text/javascript">bkLib.onDomLoaded(nicEditors.allTextAreas);</script>
 <table width="490" border="1">
   <tr>
-    <td colspan="2"><div align="center">Thêm bài viết</div></td>
+    <td colspan="2"><h2 style="font-weight: bold; text-align: center;">THÊM BÀI VIẾT</h2></td>
   </tr>
   <tr>
     <td>Tên bài viết</td>
     <td><label>
-      <input style="width:90%; height:25px;" type="text" name="tenbaiviet" id="tenbaiviet">
+      <input style="width:90%; height:25px;" type="text" name="tenbaiviet" id="tenbaiviet" required>
     </label></td>
   </tr>
   <tr>
@@ -22,13 +22,13 @@
   <tr>
     <td>Tóm tắt</td>
     <td><label>
-      <textarea name="tomtat" id="tomtat" cols="60" rows="5"></textarea>
+      <textarea name="tomtat" id="tomtat" cols="100" rows="6"></textarea>
     </label></td>
   </tr>
   <tr>
-    <td>Nội dụng</td>
+    <td>Nội dung</td>
     <td><label>
-      <textarea name="noidung" id="noidung" cols="60" rows="5"></textarea>
+      <textarea name="noidung" id="noidung" cols="100" rows="6"></textarea>
     </label></td>
   </tr>
   <tr>
@@ -63,11 +63,21 @@
       <input type="text" name="thutu" id="thutu">
     </label></td>
   </tr>
+  
+    <tr>
+    <td>chọn file tài liệu: </td>
+    <td><label>
+      <input type="file" name="upload" id="">
+    </label></td>
+  </tr>
   <tr>
     <td colspan="2"><div align="center">
-      <input type="submit" name="them" id="them" value="Thêm">
+      <input class="inputsubmit"  type="submit" name="them" id="them" value="Thêm văn bản mới">
     </div></td>
   </tr>
 </table>
 </div>
 </form>
+
+
+

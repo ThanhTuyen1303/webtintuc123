@@ -3,8 +3,13 @@
 	$baiviet=mysqli_query($connect,$sql);
 	$dong=mysqli_fetch_array($baiviet);
  ?>
- 
- <div class="fb-like" data-href="https://developers.facebook.com/docs/plugins/" data-layout="button_count" data-action="like" data-size="small" data-show-faces="true" data-share="true"></div>
+  <div class="clear"></div>
+ <div class="fb-like" data-href="https://developers.facebook.com/docs/plugins/" data-layout="button_count" data-action="like" data-size="small" data-show-faces="true" data-share="true">
+ </div>
+
+ <div class="taifilexuong" style="float:right;">
+ <?php echo "<a href='".$dong['linkstai']."'><i class='fa fa-download' aria-hidden='true'></i> tải văn bản về máy</a>" ?>
+ </div>
 <div class="row">
 	<?php
 	echo $dong['tenbaiviet']	

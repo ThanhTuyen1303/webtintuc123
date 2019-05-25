@@ -14,7 +14,7 @@
             $upass=$_POST['pword'];
             
               //Kiểm tra tên đăng nhập có tồn tại không
-    $query = mysqli_query($connect,"SELECT * FROM taikhoanadmin WHERE tentaikhoan=$uname");
+    $query = mysqli_query($connect,"SELECT * FROM taikhoanadmin WHERE tentaikhoan='$uname'");
            
           $rows= mysqli_num_rows($query);
     if ( $rows >0) {
@@ -23,30 +23,21 @@
             // so sánh mật khẩu
             if($upass !=$row['matkhau']){
                 echo "mật khẩu không đúng";
-                exit;
-            }
-            // lưu tên đăng nhập
+				header('location: dangnhap.php');
+                
+            }else{
+				
+				//lưu tên đăng nhập
             $_SESSION['username']=$uname;
 //            echo "xin chào: ".$uname." đăng nhập thành công!";
            
             header('location: ./index.php');
-            die();
-        
-        
-        
+			}
+
     }
             else{
-//                echo "Tên đăng nhập này không tồn tại. Vui lòng kiểm tra lại. <a href='javascript: history.go(-1)'>Trở lại</a>";
-
-//<script Language="JavaScript">
-
-//lert('Chào mừng bạn đến với JavaScript!. \n Nhấn Ok để tiếp tục');
-            
-//</script>
-
     $loidangnhap="loi dang nhap";
                header('location: dangnhap.php');
-    //   exit;
             }
             
            
@@ -135,7 +126,7 @@ span.psw {
   <div class="container">
    
     <label for="uname"><b>Tài khoản:</b></label>
-    <input type="text" placeholder="nhập tài khoản..." name="uname" required>
+    <input type="text" placeholder="nhập tài khoản..." name="uname" autofocus required>
 
     <label for="psw"><b>Mật khẩu:</b></label>
     <input type="password" placeholder="nhập mật khẩu.." name="pword" required>

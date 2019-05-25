@@ -7,7 +7,7 @@
   <tr>
     <td>Tên loại tin</td>
     <td><label>
-      <input style="width:90%;height:25px;" type="text" name="tenloaitin" id="tenloaitin" placeholder="nhập tên loại..">
+      <input style="width:90%;height:25px;" type="text" name="tenloaitin" id="tenloaitin" placeholder="nhập tên loại.." required>
     </label></td>
   </tr>
   <tr>
@@ -27,7 +27,7 @@
   </tr>
   <tr>
     <td colspan="2"><div align="center">
-      <input type="submit" name="them" id="them" value="Thêm">
+      <input type="submit" name="them" id="them" value="Thêm loại văn bản">
     </div></td>
   </tr>
 </table>

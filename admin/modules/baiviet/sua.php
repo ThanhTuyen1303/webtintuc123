@@ -30,7 +30,7 @@
   <tr>
     <td>Tóm tắt</td>
     <td><label>
-      <textarea name="tomtat" id="tomtat" cols="60" rows="5" >
+      <textarea name="tomtat" id="tomtat" cols="100" rows="5" >
       	<?php  echo $dong['tomtat']?>
       </textarea>
     </label></td>
@@ -38,7 +38,7 @@
   <tr>
     <td>Nội dụng</td>
     <td><label>
-      <textarea name="noidung" id="noidung" cols="60" rows="5">
+      <textarea name="noidung" id="noidung" cols="100" rows="5">
       	<?php echo $dong['noidung'] ?>
       </textarea>
     </label></td>
@@ -92,9 +92,16 @@
       <input type="text" name="thutu" id="thutu" value="<?php echo $dong['thutu'] ?>">
     </label></td>
   </tr>
+     <tr>
+    <td>chọn file tài liệu: </td>
+    <td><label>
+      <input type="file" name="upload" id="">
+    </label></td>
+  </tr>
+  
   <tr>
     <td colspan="2"><div align="center">
-      <input type="submit" name="sua" id="sua" value="Sửa">
+      <input class="inputsubmit" type="submit" name="sua" id="sua" value="Sửa">
     </div></td>
   </tr>
 </table>

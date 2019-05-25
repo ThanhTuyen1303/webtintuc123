@@ -22,11 +22,11 @@ if(!isset($_SESSION['username']))
 else
 {
     
- include('modules/config.php');
-		include('modules/header.php');
-		include('modules/menu.php');
-		include('modules/content.php');
-		include('modules/footer.php');
+ 	include('modules/config.php');
+	include('modules/header.php');
+	include('modules/menu.php');
+	include('modules/content.php');
+	include('modules/footer.php');
 }
 
 

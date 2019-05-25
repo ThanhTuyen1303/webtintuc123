@@ -110,7 +110,7 @@
     font-size: 1em;
     padding: 10px 0;
     width: 35%;
-    background: #98a2da;
+    background: #4659c3;
     border: none;
     transition: .5s all;
     -webkit-transition: .5s all;
@@ -119,7 +119,7 @@
     -ms-transition: .5s all;
 }
 .contact-left input[type="submit"]:hover{
-	background:#3c43a4;
+	background:#8e9ade;
 }
 .contact-bottom{
 	margin:3em 0 0;
@@ -790,3 +790,67 @@ h1{
   }
 }
 /*kết thúc css for loader*/
+/*css for hòm thư góp ý*/
+.gop-y-g{
+	float: left;
+    position: fixed;
+    bottom: 20%;
+    right: 5px;
+    text-align: center;
+    width: 60px;
+    z-index: 9147;
+    margin-right: 3px;
+}
+
+
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0px;
+  border: 1px solid #888;
+  width: 60%;
+}
+.modal-content .modal-header{
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	border: 1px solid red;
+}
+.modal-content .modal-header p{
+	width: 97%;
+	border: 1px solid red;
+	float: left;
+}
+/* The Close Button */
+.close {
+  color: red;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+	width: 3%;
+}
+
+.close:hover,
+.close:focus {
+  
+  text-decoration: none;
+  cursor: pointer;
+	
+}

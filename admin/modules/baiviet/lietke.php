@@ -3,7 +3,8 @@
 	 from baiviet,loaitin where loaitin.idloaitin=baiviet.idloaitin  order by thutu desc";
 	$baiviet=mysqli_query($connect,$sql);
 ?>
-<div class="content-right">
+
+<div class="content-left">
 <table width="698" border="1">
  <tr>
     <td colspan="8"><div align="center"><h1>DANH SÁCH BÀI VIẾT</h1></div></td>
@@ -29,7 +30,7 @@
     <td><?php echo $dong['trangthai']?></td>
     <td><?php echo $dong['thutu']?></td>
     <td><a href="index.php?quanly=baiviet&ac=sua&id=<?php echo $dong['idbaiviet'] ?>">Sửa</a></td>
-    <td><a href="modules/baiviet/xuly.php?xoa=baiviet&id=<?php  echo $dong['idbaiviet']?>">Xóa</a></td>
+    <td><a onclick="abc()" href="modules/baiviet/xuly.php?xoa=baiviet&id=<?php  echo $dong['idbaiviet']?>">Xóa</a></td>
   </tr>
   <?php
   $i++;
@@ -38,3 +39,4 @@
 </table>
 </div>
 <div class="clear"></div>
+
