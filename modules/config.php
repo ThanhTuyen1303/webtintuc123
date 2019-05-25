@@ -10,4 +10,5 @@ $db_select = mysqli_select_db($connect, $csdl);
 if (!$db_select) {
     die("Database selection failed: " . mysqli_error($connect));
 }
+
 ?>

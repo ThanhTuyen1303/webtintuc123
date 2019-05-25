@@ -1,10 +1,16 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="author" content="trần văn bắc & thanh tuyền">
+<meta name="description" content="trang web pháp luật phục vụ đồ án tổng hợp ngành đại học">
+<meta name="application-name" content="website  hỗ trợ tra cứu văn  bản pháp luật">
+<meta name="keywords" content="web tin pháp luật, pháp luật, việt nam, thời sự, tin nóng,">
+<link rel="shortcut icon" href="hinh/avatar.jpg">
 <link rel="stylesheet" type="text/css" href="css.css" />
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="jquery/scripts.js"></script>
+<script type="text/javascript" src="./jquery/scripts.js"></script>
 <script type="text/javascript" src="jquery/scroll-to-top.js"></script>
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -82,6 +88,7 @@ $(window).on('load',function(event)
       <br>
       <span aria-hidden="true" class="white-text close">&times;</span>  
       <h2 style="font-weight: bold; color: #cc0000">Phản hồi hòm thư</h2>
+      <span>lưu ý: mọi thông tin của bạn chúng tôi sẽ bảo mật và là riêng tư. xin cảm ơn</span>
       <br>
       <div class="agile_mail_grids">
 
@@ -107,7 +114,22 @@ $(window).on('load',function(event)
   </div>
 
 </div>
+<!-- Chatra {literal} -->
+<script>
+    (function(d, w, c) {
+        w.ChatraID = 'XY65L99LARfhvJLWz';
+        var s = d.createElement('script');
+        w[c] = w[c] || function() {
+            (w[c].q = w[c].q || []).push(arguments);
+        };
+        s.async = true;
+        s.src = 'https://call.chatra.io/chatra.js';
+        if (d.head) d.head.appendChild(s);
+    })(document, window, 'Chatra');
+</script>
+<!-- /Chatra {/literal} -->
 </body>
+
 <script>
 var modal = document.getElementById('myModal');
 
@@ -136,4 +158,5 @@ window.onclick = function(event) {
 
 	
 	</script>
+
 </html>

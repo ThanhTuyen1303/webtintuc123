@@ -60,6 +60,11 @@ input[type=text], input[type=password] {
   border: 1px solid #ccc;
   box-sizing: border-box;
 }
+input[type=text]:focus, input[type=password]:focus {
+ border: 2px solid red;
+/*	background: linear-gradient(to bottom, #33ccff 0%, #ff99cc 100%);*/
+}
+
 
 button {
   background-color: #4CAF50;

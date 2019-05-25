@@ -14,8 +14,12 @@
 		//tên file
 		//$tenfile=$_FILES['upload']['name'];
 			move_uploaded_file($_FILES["upload"]["tmp_name"],"../../../uploadsfile/".$_FILES["upload"]["name"]);
-
-				$tringdownload="uploadsfile/".$_FILES["upload"]["name"];
+		if($_FILES["upload"]["name"]==null)
+		{$tringdownload="";}
+		else{
+			$tringdownload="uploadsfile/".$_FILES["upload"]["name"];
+		}
+				
 	//echo "<a href='$tringdownload'>tải văn bản về máy</a>";
 		
 		//them loai tin
