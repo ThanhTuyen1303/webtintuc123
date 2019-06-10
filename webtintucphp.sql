@@ -1,4 +1,4 @@
--- phpMyAdmin SQL Dump
+﻿-- phpMyAdmin SQL Dump
 -- version 4.8.4
 -- https://www.phpmyadmin.net/
 --
@@ -195,7 +195,7 @@ ALTER TABLE `taikhoanadmin`
 
 --
 -- AUTO_INCREMENT cho bảng `baiviet`
---
+-- csdl
 ALTER TABLE `baiviet`
   MODIFY `idbaiviet` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=298;
 
