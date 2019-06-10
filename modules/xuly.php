@@ -4,7 +4,7 @@
  
 	if(isset($_POST['send'])){	
 		include('config.php');
-   //$IDKH=$_GET['id'];
+  	//$IDKH=$_GET['id'];
   
 	$TenKH=$_POST['Name'];
 	$Email=$_POST['Email'];
