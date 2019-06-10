@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -61,6 +62,51 @@ $(window).on('load',function(event)
 	include('modules/config.php');
 	include('modules/header.php');
 	include('modules/menu.php');
+	?>
+<!--	css for fiel search-->
+	<style>
+
+form.example input[type=text] {
+  padding: 10px;
+  font-size: 17px;
+  border: 1px solid grey;
+  float: left;
+  width: 80%;
+  background: #f1f1f1;
+}
+
+form.example button {
+  float: left;
+  width: 20%;
+  padding: 10px;
+  background: #2196F3;
+  color: white;
+  font-size: 17px;
+  border: 1px solid grey;
+  border-left: none;
+  cursor: pointer;
+}
+
+form.example button:hover {
+  background: #0b7dda;
+}
+
+form.example::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+</style>
+<div style="clear:both;"></div>
+	<form class="example" action="search.php" method="get">
+		<input type="text" placeholder="Search.." name="q">
+		<button type="submit"><i class="fa fa-search"></i></button>
+	</form>
+	
+
+	
+	<div style="clear:both;"></div>
+	<?php
 	include('modules/content.php');
 	include('modules/footer.php');
     

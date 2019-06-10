@@ -1,4 +1,5 @@
 
+
  <div class="container" style="width:70%; heigh:150px;float:left;">
   
   <div id="myCarousel" class="carousel slide" data-ride="carousel">
@@ -44,10 +45,13 @@
 </div>
 <!--kết thúc slide show-->
 <!--lá cờ-->
+<!--
 <div style="width:30%; float:left;">
     <img src="./imgs/Vietnam-240-animated-flag-gifs.gif" alt="">
 </div>
+-->
 <!--kết thúc lá cờ-->
+<!--
 <div id="noticesmall" style="clear:both;">
   <br>
    <i class="fa fa-bullhorn" style="width: 5%;"></i>
@@ -56,7 +60,11 @@
         <i class="fade fa-flag"> </i><span>Sự tự do về chính trị, sự hòa bình của một quốc gia và chính cả khoa học là những món quà mà Định mệnh đánh thuế nặng nề bằng máu! -Political liberty, the peace of a nation, and science itself are gifts for which Fate demands a heavy tax in blood! Chính trị là một vùng đất của những hy vọng khiêm nhường và những đòi hỏi vừa phải đến đáng ngạc nhiên, nơi tất cả đều là người tốt miễn không phải là tội phạm, và tất cả đều là người khôn ngoan miễn không phải lố lăng.-Politics is a place of humble hopes and strangely modest requirements, where all are good who are not criminal and all are wise who are not ridiculously otherwise.by:Frank Moore Colby </span>
 
     </marquee>
+
+
 </div>
+-->
+
 <div class="content" id="contenmain">
 	<div class="content_left">
     	<?php
@@ -95,3 +103,4 @@
 </div>
 <div class="clear"></div>
 <!-- ket thuc content 1 -->
+

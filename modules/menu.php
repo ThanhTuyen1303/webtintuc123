@@ -1,3 +1,6 @@
+
+
+
 <?php
 	$sql="select * from loaitin order by thutu ASC";
 	$loaitin=mysqli_query($connect,$sql);
@@ -17,15 +20,17 @@
        <?php
 		}
 	   ?>
-	   <li>
-		   	<p style="float:right;position:absolute;right:280px;">
-				<input name="search" type="text" placeholder=" Tìm kiếm tin... " />
-				<input name="search" type="button"  value=" Tìm kiếm "  />
-			</p>
-	   </li>
+	
+
+
     </ul>
 
 </div>
 <hr>
+<br>
+
 
 <!-- ket thuc menu -->
+
+		   	
+	
