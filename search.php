@@ -50,7 +50,7 @@ if(isset($_GET['q']))
 		{
 			?>
 		<div class="result">
-			<a href="?xem=chitiet&id=<?php echo $r['_id'];  ?>"><?php echo $r['_source']['tenbaiviet'];  ?></a>
+			<a href="index.php?xem=chitiet&id=<?php echo $r['_id'];  ?>"><?php echo $r['_source']['tenbaiviet'];  ?></a>
 			<div class="result-tomtat"><?php echo $r['_source']['tomtat'];  ?></div>
 		</div>
 			<?php
