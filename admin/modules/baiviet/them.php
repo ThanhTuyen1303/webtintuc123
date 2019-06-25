@@ -1,4 +1,11 @@
 
+
+
+
+
+
+
+
 <form action="modules/baiviet/xuly.php" method="post" enctype="multipart/form-data">
 <div class="content-left">
 <script src="http://js.nicedit.com/nicEdit-latest.js" type="text/javascript"></script>
