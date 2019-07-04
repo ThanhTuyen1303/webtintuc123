@@ -1,6 +1,4 @@
 
-
-
 <?php
 	$sql="select * from loaitin order by thutu ASC";
 	$loaitin=mysqli_query($connect,$sql);
@@ -21,8 +19,6 @@
 		}
 	   ?>
 	
-
-
     </ul>
 
 </div>
