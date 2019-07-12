@@ -53,8 +53,8 @@ var linhxinh = $('a[id="example"]').attr('href');
 </script>
  </div>
   <div style="margin-top:5px; width:100%;" class="fb-comments" data-href="https://developers.facebook.com/docs/plugins/comments#configurator" data-numposts="5"></div>
-   <div class="scroll-to-top" style="position:fixed;bottom:20%;left:80%;cursor:pointer;display:none;">
+  <!--  <div class="scroll-to-top" style="position:fixed;bottom:20%;left:80%;cursor:pointer;display:none;">
     	<img src="imgs/Scroll to top.gif" width="40" height="40" />
     </div>
-
+ -->
 

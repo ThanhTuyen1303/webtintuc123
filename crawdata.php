@@ -60,7 +60,7 @@ foreach($tins as $vb)
 	$tomtat2=$vb->find("div.toanvancontent p[align='CENTER']",1);
 	$tomtat3=$vb->find("div.toanvancontent p[align='CENTER']",2);
 	$tomtat4=$vb->find("div.toanvancontent p[align='JUSTIFY']",0);
-	$tomtat=$tomtat1.$tomtat2.$tomtat3.$tomtat4.".......<<nhấn để xem chi tiết văn bản>>";
+	$tomtat=$tomtat1.$tomtat2.$tomtat3.$tomtat4;
 	
 	//nội dung văn bản pháp luật
 	$ndheader=$vb->find("div",0);
@@ -83,6 +83,11 @@ foreach($tins as $vb)
 }
 	
 }
+//get from page 2
+
+
+//get....
+
 
 ?>
 <script>alert("crawl data and insert database thành công!\n tổng cộng: 99998");</script>

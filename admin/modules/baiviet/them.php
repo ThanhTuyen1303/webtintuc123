@@ -1,3 +1,31 @@
+<?php
+require_once '../app/init.php';
+if (!empty($P_POST)) {
+
+  if(isset($_POST['tenbaiviet'], $_POST['tomtat'], $_POST['noidung']))
+  {
+   
+    $tenbaiviet=$_POST['tenbaiviet'];
+    $tomtat=$_POST['tomtat'];
+    $noidung=$_POST['noidung'];    
+    
+$indexed = $es->index([
+      'index'=>'baiviets',
+      'type' =>'baiviet',
+      'body'=>[
+        'tenbaiviet' =>$tenbaiviet,
+        'tomtat' =>$tomtat,
+        'noidung' =>$noidung, 
+      ]
+      
+    ]);
+if($indexed){
+      print_r($indexed);
+    }
+  }
+    
+}
+?>
 
 
 
