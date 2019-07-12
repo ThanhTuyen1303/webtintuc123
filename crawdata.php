@@ -37,7 +37,7 @@ include('crawldata/simple_html_dom.php');
 //	
 //	echo $ndheader.$ndmain;
 //}
-//-----------------------------------------------------
+//----------------99998-------------------------------------
 
 for($i=1; $i<=99998;$i++)
 {	
@@ -53,31 +53,34 @@ foreach($tins as $vb)
 	
 	//ten văn bản
 	$tenvb=$html->find("div.box-map ul li a",3)->innertext;
+	$tenvb=(string)$tenvb;
+	
 	//ảnh minh họa default
 	$anhminhhoa="uploads/imagevbdefault.jpg";
 	//tóm tắt
-	$tomtat1=$vb->find("div.toanvancontent p[align='CENTER']",0);
-	$tomtat2=$vb->find("div.toanvancontent p[align='CENTER']",1);
-	$tomtat3=$vb->find("div.toanvancontent p[align='CENTER']",2);
-	$tomtat4=$vb->find("div.toanvancontent p[align='JUSTIFY']",0);
-	$tomtat=$tomtat1.$tomtat2.$tomtat3.$tomtat4;
-	
+	$tomtat1=$vb->find("div.toanvancontent p[align='CENTER']",0)->outertext;
+	$tomtat2=$vb->find("div.toanvancontent p[align='CENTER']",1)->outertext;
+	$tomtat3=$vb->find("div.toanvancontent p[align='CENTER']",2)->outertext;
+	$tomtat4=$vb->find("div.toanvancontent p[align='JUSTIFY']",0)->outertext;
+	$tomtat=($tomtat1.$tomtat2.$tomtat3.$tomtat4);
+	$tomtat=(string)$tomtat;
 	//nội dung văn bản pháp luật
-	$ndheader=$vb->find("div",0);
-	$ndmain=$vb->find("div",1);
+	$ndheader=$vb->find("div",0)->outertext;
+	$ndmain=$vb->find("div",1)->outertext;
 	$noidungvb=$ndheader.$ndmain;
+	$noidungvb=(string)$noidungvb;
 	
 	//loại tin pháp luật -: bỏ trống mặc định là loại đầu tiên của bảng loại tin (@-@)
 	//trạng thái mặc định là hiển thị :((     (^_^)
 	
 	//thứ tự:
 	$thutu=$i;
-	
+	$loaitin=rand(1,3);
 	
 	//tạm thời hết tin và ta bắt đầu chèn văn bản vô database
 	include('modules/config.php');
 	$sqlinsert="insert into baiviet(tenbaiviet,anhminhhoa,tomtat,noidung,idloaitin,trangthai,thutu)
-		values('$tenvb','$anhminhhoa','$tomtat','$noidungvb',23,'Hiển thị','$thutu')";
+		values('$tenvb','$anhminhhoa','$tomtat','$noidungvb',$loaitin,'Hiển thị','$thutu')";
 		mysqli_query($connect,$sqlinsert);
 	
 }
