@@ -159,7 +159,7 @@ if(isset($_GET['q']))
 		foreach($results as $r)
 		{
 			?>
-		<div class="result" style="max-width: 650px;">
+		<div class="result" style="max-width: 700px;">
 			<a href="index.php?xem=chitiet&id=<?php echo $r['_id'];  ?>"><?php echo $r['_source']['tenbaiviet'];  ?><i class="fa fa-file-alt"></i></a>
 			
 			<div class="result-tomtat"><?php echo $r['_source']['tomtat'];  ?></div>

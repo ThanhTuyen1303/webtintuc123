@@ -37,9 +37,9 @@
                 <div class="col-md-3 w3_footer_grid" style="float:left; text-align: justify">
                     <h3>Danh mục</h3>
                     <ul class="info"> 
-                        <li><a href="index.php?xem=loaitin&id=23"> Văn bản pháp luật</a></li>
-                        <li><a href="index.php?xem=loaitin&id=24">Công văn</a></li>
-                        <li><a href="index.php?xem=loaitin&id=25">Tình huống pháp luật</a></li>
+                        <li><a href="index.php?xem=loaitin&id=1"> Văn bản pháp luật</a></li>
+                        <li><a href="index.php?xem=loaitin&id=2">Công văn</a></li>
+                        <li><a href="index.php?xem=loaitin&id=3">Tình huống pháp luật</a></li>
                        
                     </ul>
                 </div>
