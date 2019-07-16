@@ -25,7 +25,6 @@
 
 <body class="preloading">
 
-
 <script type="text/javascript">
  
 $(window).on('load',function(event)
@@ -60,12 +59,12 @@ $(window).on('load',function(event)
 <div class="wrapper">
 <?php
 
-	include('modules/config.php');
-	include('modules/header.php');
-	include('modules/menu.php');
-	?>
-<!--	css for fiel search-->
-	<style>
+  include('modules/config.php');
+  include('modules/header.php');
+  include('modules/menu.php');
+  ?>
+<!--  css for fiel search-->
+  <style>
 
 form.example input[type=text] {
   padding: 10px;
@@ -99,19 +98,19 @@ form.example::after {
 }
 </style>
 <div style="clear:both;"></div>
-	<form class="example" action="search.php" method="get">
-		<input type="text" placeholder="Search.." name="q">
-		<button type="submit"><i class="fa fa-search"></i></button>
-	</form>
-	
+  <form class="example" action="search.php" method="get">
+    <input type="text" placeholder="Search.." name="q">
+    <button type="submit"><i class="fa fa-search"></i></button>
+  </form>
+  
 
-	
-	<div style="clear:both;"></div>
-	<?php
-	include('modules/content.php');
-	include('modules/footer.php');
+  
+  <div style="clear:both;"></div>
+  <?php
+  include('modules/content.php');
+  include('modules/footer.php');
     
-	
+  
 ?>
 
 </div>
@@ -119,9 +118,9 @@ form.example::after {
 <div class="gop-y-g" id="myBtn">
 
     <a href="#" id="gopyv2" class="gop-y-link">
-		<img alt="hòm thư góp ý" src="./hinh/hom-thu-gop-y.png" title="Hãy góp ý cho chúng tôi qua hòm thư ! (^-^)">
-	</a>
-	
+    <img alt="hòm thư góp ý" src="./hinh/hom-thu-gop-y.png" title="Hãy góp ý cho chúng tôi qua hòm thư ! (^-^)">
+  </a>
+  
 </div>
 <!-- The Modal -->
 <div id="myModal" class="modal" onclick="">
@@ -203,7 +202,7 @@ window.onclick = function(event) {
   }
 }
 
-	
-	</script>
+  
+  </script>
 
 </html>

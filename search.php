@@ -145,6 +145,7 @@ if(isset($_GET['q']))
 	if($query['hits']['total'] >=1){
 		$results =$query['hits']['hits'];
 	}
+	
 
 }
 
@@ -153,31 +154,40 @@ if(isset($_GET['q']))
 
 
 <div class="content_left" style="width:auto;" >
-	<?php
+
+		<h4 style="color: red; font-weight: bold; text-align: left;">Kết quả bạn cần tìm:  
+			<u style="color: black">
+		
+				<?php 
+					if (empty($results)) {
+						echo "0 kết quả ";
+					}
+				?>
+		 
+			</u> 
+		</h4>
 	
-	if(isset($results)){
+
+
+	<?php
+	if(isset($results))
+	{
+		
 		foreach($results as $r)
 		{
+
 			?>
-		<div class="result" style="max-width: 700px;">
-			<a href="index.php?xem=chitiet&id=<?php echo $r['_id'];  ?>"><?php echo $r['_source']['tenbaiviet'];  ?><i class="fa fa-file-alt"></i></a>
+			<br>
 			
-			<div class="result-tomtat"><?php echo $r['_source']['tomtat'];  ?></div>
-		</div>
+			<div class="result" style="max-width: 670px;">
+				<a href="index.php?xem=chitiet&id=<?php echo $r['_id'];  ?>"><?php echo $r['_source']['tenbaiviet'];  ?><i class="fa fa-file-alt"></i></a>
+			
+				<div class="result-tomtat"><?php echo $r['_source']['tomtat'];  ?></div>
+			</div>
+			<hr>
 			<?php
 		}
-	}
-	if(empty($results)){
-		foreach($results as $r)
-		{
-			?>
-		<div class="result">
-			<a href="index.php?xem=chitiet&id=<?php echo $r['_id'];  ?>"><?php echo $r['_source']['tenbaiviet'];  ?></a>
-			không có đâu!
-			<div class="result-tomtat"><?php echo $r['_source']['tomtat'];  ?></div>
-		</div>
-			<?php
-		}
+		
 	}
 	
 	

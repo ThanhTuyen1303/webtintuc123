@@ -6,11 +6,10 @@ include('crawldata/simple_html_dom.php');
 for($i=1; $i<=99998;$i++)
 {	
 
-	$url = 'http://vbpl.vn/TW/Pages/vbpq-toanvan.aspx?ItemID='.$i.'&dvid=13';
-    $html = file_get_html($url);
+		$url = 'http://vbpl.vn/TW/Pages/vbpq-toanvan.aspx?ItemID='.$i.'&dvid=14';
+     $html = file_get_html($url);
 	
-	
-$tins=$html->find("div.content div.fulltext");
+	$tins=$html->find("div.content div.fulltext");
 foreach($tins as $vb)
 {
 	
