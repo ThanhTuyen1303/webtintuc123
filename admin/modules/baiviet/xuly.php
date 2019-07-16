@@ -65,9 +65,12 @@
 	}else{
 		//xoa loai tin
 		
-
-$sql="delete from baiviet where idbaiviet='$id' ";
+//delete document of mysql
+	$sql="delete from baiviet where idbaiviet='$id' ";
 	mysqli_query($connect,$sql);
+
+	// delete document in elasticsearch
+	
 		header('location:../../index.php?quanly=baiviet&ac=them');
 		
 }

@@ -1,6 +1,7 @@
 <?php
 	$sql="select idbaiviet,tenbaiviet,anhminhhoa,tomtat,noidung,loaitin.tenloaitin,baiviet.trangthai,baiviet.thutu
 	 from baiviet,loaitin where loaitin.idloaitin=baiviet.idloaitin  order by thutu desc";
+   ini_set('memory_limit', '-1');
 	$baiviet=mysqli_query($connect,$sql);
 ?>
 

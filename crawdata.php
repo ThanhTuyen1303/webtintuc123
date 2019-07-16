@@ -3,7 +3,7 @@ include('crawldata/simple_html_dom.php');
 
 //----------------99998-------------------------------------
 
-for($i=1; $i<=99998;$i++)
+for($i=1; $i<=9;$i++)
 {	
 
 		$url = 'http://vbpl.vn/TW/Pages/vbpq-toanvan.aspx?ItemID='.$i.'&dvid=14';
@@ -33,6 +33,9 @@ foreach($tins as $vb)
 	$ndmain=$vb->find("div",1)->outertext;
 	$noidungvb=$ndheader.$ndmain;
 	
+
+	// link tai
+	 //$linktaifile=
 	
 	//loại tin pháp luật -: bỏ trống mặc định là loại đầu tiên của bảng loại tin (@-@)
 	//trạng thái mặc định là hiển thị :((     (^_^)

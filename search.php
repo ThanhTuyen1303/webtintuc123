@@ -156,6 +156,7 @@ if(isset($_GET['q']))
 <div class="content_left" style="width:auto;" >
 
 		<h4 style="color: red; font-weight: bold; text-align: left;">Kết quả bạn cần tìm:  
+			
 			<u style="color: black">
 		
 				<?php 
