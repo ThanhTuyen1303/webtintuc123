@@ -24,7 +24,7 @@
     <td><?php echo $dong['trangthai']?></td>
     <td><?php echo $dong['thutu']?></td>
     <td><a href="index.php?quanly=loaitin&ac=sua&id=<?php echo $dong['idloaitin'] ?>">Sửa</a></td>
-    <td><a href="modules/loaitin/xuly.php?xoa=loaitin&id=<?php  echo $dong['idloaitin']?>">Xóa</a></td>
+    <td><a onclick="return confirm('Bạn có chắc muốn xóa thông tin này chứ ?')" href="modules/loaitin/xuly.php?xoa=loaitin&id=<?php  echo $dong['idloaitin']?>">Xóa</a></td>
   </tr>
   <?php
   $i++;

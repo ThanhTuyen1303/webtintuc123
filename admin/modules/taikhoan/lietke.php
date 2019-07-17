@@ -29,7 +29,7 @@ while($dong=mysqli_fetch_array($taikhoan)){
     <td><?php echo $dong['dienthoai']?></td>
     <td><?php echo $dong['level']?></td>
     <td><a href="index.php?quanly=taikhoan&ac=sua&id=<?php echo $dong['id'] ?>">Sửa</a></td>
-    <td><a href="modules/taikhoan/xuly.php?xoa=taikhoan&id=<?php  echo $dong['id']?>&lvel=<?php  echo $dong['level']?>">Xóa</a></td>
+    <td><a onclick="return confirm('Bạn có chắc muốn xóa tài khoản này chứ ?')" href="modules/taikhoan/xuly.php?xoa=taikhoan&id=<?php  echo $dong['id']?>&lvel=<?php  echo $dong['level']?>">Xóa</a></td>
   </tr>
   <?php
 

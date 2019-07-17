@@ -20,7 +20,9 @@
     <td colspan="2">Quản lý</td>
   </tr>
   <tr>
+
   <?php
+  
   $i=0;
   while($dong=mysqli_fetch_array($baiviet)){
   ?>
@@ -31,13 +33,17 @@
     <td><?php echo $dong['trangthai']?></td>
     <td><?php echo $dong['thutu']?></td>
     <td><a href="index.php?quanly=baiviet&ac=sua&id=<?php echo $dong['idbaiviet'] ?>">Sửa</a></td>
-    <td><a onclick="abc()" href="modules/baiviet/xuly.php?xoa=baiviet&id=<?php  echo $dong['idbaiviet']?>">Xóa</a></td>
+    <td><a onclick="return confirm('Bạn có chắc muốn xóa thông tin này chứ ?')" href="modules/baiviet/xuly.php?xoa=baiviet&id=<?php  echo $dong['idbaiviet']?>">Xóa</a></td>
   </tr>
   <?php
   $i++;
   }
   ?>
+
 </table>
+
+
+
 </div>
 <div class="clear"></div>
 
