@@ -3,10 +3,10 @@ include('crawldata/simple_html_dom.php');
 
 //----------------99998-------------------------------------
 
-for($i=5255; $i<=99998;$i++)
+for($i=5500; $i<=99998;$i++)
 {	
 
-		$url = 'http://vbpl.vn/TW/Pages/vbpq-toanvan.aspx?ItemID='.$i.'&dvid=1';
+		$url = 'http://vbpl.vn/TW/Pages/vbpq-toanvan.aspx?ItemID='.$i.'&dvid=13';
      $html = file_get_html($url);
 	
 	$tins=$html->find("div.content div.fulltext");

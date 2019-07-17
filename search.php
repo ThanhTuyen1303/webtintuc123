@@ -142,7 +142,11 @@ if(isset($_GET['q']))
 //	
 //	die();
 	
-	if($query['hits']['total'] >=1){
+	// if($query['hits']['total'] >=1){
+	// 	$results =$query['hits']['hits'];
+	// }
+	$countresult=$query['hits']['total']['value'];
+	if( $countresult >=1){
 		$results =$query['hits']['hits'];
 	}
 	
@@ -155,15 +159,11 @@ if(isset($_GET['q']))
 
 <div class="content_left" style="width:auto;" >
 
-		<h4 style="color: red; font-weight: bold; text-align: left;">Kết quả bạn cần tìm:  
+		<h4 style="color: red; font-weight: bold; text-align: left;">Kết quả bạn cần tìm: 
 			
 			<u style="color: black">
 		
-				<?php 
-					if (empty($results)) {
-						echo "0 kết quả ";
-					}
-				?>
+			<?php echo $countresult.' kết quả'; ?>
 		 
 			</u> 
 		</h4>
